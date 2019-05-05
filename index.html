@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gary Abbott">
     <meta name="description" content="Describe your web site here">
-    <script>
-        var d = new Date();
-        var name = "Gary Abbott, ";
-        var code = "Copyright \u00a9, ";
-        var line = code.concat(name.concat(d));
-        document.getElementById("demo").innerHTML = line;
-    </script>
+
 </head>
 <body>
     <header>Gary Abbott Basic Site</header>
@@ -23,7 +17,14 @@
      <h2>School Assignments</h2>
     </main>
     <footer>
-     <p id="demo"></p>
+    <p id="demo"></p>
+    <script>
+        var d = new Date();
+        var name = "Gary Abbott, ";
+        var code = "Copyright \u00a9, ";
+        var line = code.concat(name.concat(d));
+        document.getElementById("demo").innerHTML = line;
+    </script>   
     </footer>
 </body>
 </html>
