@@ -15,12 +15,26 @@
 * ****************************** */
 
 
+/*
+* Todo List
+Make Logo Larger
+Make Weather Site Name Larger
+Remover Bullets from lists
+removed default padding
+make links flow horizontal
+correct the height of the navigarion bar
+move the navigation bar to the bottom of the page
+add a bit of space on the bottom of the page so the footer is not hidden by the navigatio nav bar
+make sure the main blocks that make up our page flow verically
+make sure the main blocks are centered horizontally, but not all of the test indies of them
+hide the bullets for the other data and format the data to match the wireframe
+*/
+
 /* Includes (fonts and supplementary stylesheets */
 /* 1.1 Normalize Import */ 
 @import url('normalize.css');
 /* 1.2 Google Font Import */  
 @import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
-
 
 /* General Styles (for all pages and devices) */
 
@@ -54,20 +68,25 @@ html {
 #Header_Weather{
     background-color: dodgerblue;
     height: auto;
+    text-align: left;
     font-size: .85em;
     font-weight: 600;
 }
 
 #Header_Weather_Logo{
     float: left;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
      margin: 15px 10px 10px 10px ;
 }
 
 .Weather_Section{
     text-align: center;
     font-family: 'Sansita', sans-serif;    
+}
+
+#Heading1_Weather{
+    margin-left: 75px;
 }
 
 .ul_Horizontal{
