@@ -1,0 +1,88 @@
+/* ******************************
+*  Stylesheet for Screened Devices
+*  Created by: Gary Abbott
+*  
+*  1.  Includes (fonts and supplementary stylesheets)
+*  1.1 Normalize
+*  1.2 Google fonts
+*
+*  2.  General Styles (for all pages and devices)
+*
+*  3.  Mobile First (styles specific to small screens)
+*
+*  4.  Large Screen Styles (Media Queries begin here)
+*
+* ****************************** */
+
+
+/* Includes (fonts and supplementary stylesheets */
+/* 1.1 Normalize Import */ 
+@import url('normalize.css');
+/* 1.2 Google Font Import */  
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+
+/* General Styles (for all pages and devices) */
+
+html {
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
+   body{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+  }
+
+  .ul_Horizontal li{
+    display: inline-block;
+    list-style: none;
+}
+
+/* Section Display */
+
+  .Weather_Section{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+  }
+ 
+#Header_Weather{
+    background-color: dodgerblue;
+    height: auto;
+    font-size: .85em;
+    font-weight: 600;
+}
+
+#Header_Weather_Logo{
+    float: left;
+    height: 45x;
+    width: 45px;
+    margin: 15px 10px 10px 10px ;
+}
+
+.Weather_Section{
+    text-align: center;
+    font-family: 'Sansita', sans-serif;    
+}
+
+.ul_Horizontal{
+text-align: left;
+display: inline-block;
+padding: 0%;
+}
+
+#Wind_Image{
+    width: 100%;
+}
+
+#ul_Hourly{
+    list-style:none;
+    max-height:100px;
+    margin:0;
+    overflow:auto;
+}
