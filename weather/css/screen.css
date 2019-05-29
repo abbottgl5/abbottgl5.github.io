@@ -60,9 +60,9 @@ html {
 
 #Header_Weather_Logo{
     float: left;
-    height: 45px;
     width: 45px;
-    margin: 15px 10px 10px 10px ;
+    height: 45px;
+     margin: 15px 10px 10px 10px ;
 }
 
 .Weather_Section{
