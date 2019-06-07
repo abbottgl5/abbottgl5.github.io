@@ -1,0 +1,82 @@
+/* Page Adjustments */
+
+@import url('normalize.css');
+
+html {
+  box-sizing: border-box;
+ }
+
+ *, *:before, *:after{
+  box-sizing: inherit;
+ }
+
+ body{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+    min-width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+/* Body Adujustments */
+
+ #body{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+/* Heading Adjustments */
+
+h1{
+    text-align: center;
+  }
+
+  /* UL Adjustment */
+
+ul{
+    margin:0px;
+    padding:0px;
+    justify-content:center;
+    list-style-type: none;
+  }
+  
+  li{
+    margin-left:50px;
+  }
+
+/* Section Adjustments */
+
+  .sectionBody{
+    padding-left:25px;
+    border: 5px solid;
+    border-radius: 15px;
+    border-color: orangered;
+    background-color: lightgray;
+    position: relative;
+  }
+
+  .ulLayout{
+      margin-left:45px;
+  }
+
+  /* Paragraph Adjustments */
+  
+  p{
+      margin:25px;
+      line-height: 10px;
+  }
+
+  /* Nav Adjustments */
+nav{
+    margin: 20px;
+    margin-left: 0px;
+}
+
+#nav{
+    justify-content:left;
+    display:flex;
+    list-style-type: none; 
+  }
+
+  

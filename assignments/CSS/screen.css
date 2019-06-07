@@ -10,12 +10,12 @@ html {
   box-sizing: inherit;
  }
 
-/* Body Adjustments */
-
  body{
   font-family: helvetica, verdana, sans-serif;
   font-size: 20px;
 }
+
+/* Body Adjustments */
 
 #body{
   width:75%;
