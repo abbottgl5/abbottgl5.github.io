@@ -46,7 +46,12 @@ section{
 /* UL Adjustments */
 
 li{
+    display: flex;
     margin-left:50px;
+  }
+
+  .divSpan{
+    width: 150px;
   }
 
 /* Nav Adjustments */
