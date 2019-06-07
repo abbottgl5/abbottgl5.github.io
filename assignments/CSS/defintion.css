@@ -1,3 +1,5 @@
+/* Page Adjustments */
+
 @import url('normalize.css');
 
 html {
@@ -16,28 +18,38 @@ html {
   margin-right:auto;
   }
 
+/* Body Adujustments */
+
+/* Heading Adjustments */
+
+h1{
+  text-align: center;
+}
+
 h2{
     margin-left:25px;
+  }
+
+/* Section Adjustments */
+
+section{
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: orangered;
+  margin-bottom:6px;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right:auto;
+  position: relative;
 }
+
+/* UL Adjustments */
 
 li{
     margin-left:50px;
   }
 
-h1{
-    text-align: center;
-}
-
-section{
-    border: 5px solid;
-    border-radius: 15px;
-    border-color: orangered;
-    margin-bottom:6px;
-    background-color: lightgray;
-    margin-left: auto;
-    margin-right:auto;
-    position: relative;
-  }
+/* Nav Adjustments */
 
   #nav{
     padding:0px;
