@@ -1,0 +1,47 @@
+@import url('normalize.css');
+
+html {
+  box-sizing: border-box;
+ }
+
+ *, *:before, *:after{
+  box-sizing: inherit;
+ }
+
+ body{
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 20px;
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  }
+
+h2{
+    margin-left:25px;
+}
+
+li{
+    margin-left:50px;
+  }
+
+h1{
+    text-align: center;
+}
+
+section{
+    border: 5px solid;
+    border-radius: 15px;
+    border-color: orangered;
+    margin-bottom:6px;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+  }
+
+  #nav{
+    padding:0px;
+    justify-content:left;
+    display:flex;
+    list-style-type: none; 
+  }

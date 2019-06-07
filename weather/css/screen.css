@@ -66,6 +66,14 @@ html {
     border: 1px solid;
     border-radius: 15px;
   }
+
+  #pictureResponsive{
+    width:100%;
+    margin: .2em auto;
+    border: 5px solid;
+    border-radius: 15px;
+    color: red;
+  }
  
 #Header_Weather{
     background-color: dodgerblue;
