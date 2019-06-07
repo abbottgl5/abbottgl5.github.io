@@ -78,8 +78,14 @@ li{
 }
 
 #nav{
-  padding:0px;
   justify-content:left;
   display:flex;
   list-style-type: none; 
+}
+
+ul{
+  padding:0px;
+  justify-content:center;
+  display:flex;
+  list-style-type: none;
 }
