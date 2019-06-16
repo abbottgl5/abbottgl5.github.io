@@ -30,8 +30,8 @@ h6 {
 
 .wrapper {
 	display: block;
-	flex-flow: row;
-	flex-wrap: nowrap;
+	/* flex-flow: row;
+	flex-wrap: nowrap; */
 	padding: .5em;
 }
 
@@ -55,11 +55,10 @@ width:300px;
 
 .page-header {
 	position: absolute;
-	top:80px;
+	top: 7px;
 	bottom:8px;
 	left: 16px;
 }
-
 
 
 /*******************************
