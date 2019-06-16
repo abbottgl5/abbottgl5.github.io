@@ -1,0 +1,116 @@
+/* Page CSS */
+
+@import url('normalize.css');
+
+html {
+  box-sizing: border-box;
+ }
+
+ *, *:before, *:after{
+  box-sizing: inherit;
+ }
+
+ body{
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 20px;
+}
+
+/* Body Adjustments */
+
+#body{
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Heading Adjustments */
+
+h1{
+  text-align: center;
+}
+
+/* Section Adjustments */
+
+section{
+  border: 5px solid;
+  border-radius: 15px;
+  border-color: orangered;
+  margin-top:5px;
+  margin-bottom:6px;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right:auto;
+  position: relative;
+ }
+
+
+.size{
+  margin:0px;
+}
+
+div{
+  min-width:550px;
+}
+
+/* Image Adjustments */
+
+img{
+  margin: 10px;
+  border-radius: 15px;
+  }
+
+#imageRose{
+  display:block;
+  width:75%;
+  max-width: 800px;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imageRoseLimit{
+  display:block;
+  width:90%;
+  max-width: 2000px;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* UL Adjustments */
+
+ul{
+  padding:0px;
+  justify-content:center;
+  display:flex;
+  list-style-type: none;
+}
+
+.ulMain{
+  text-align: ceter;
+  margin:0px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.nav{
+  margin:0px;
+}
+
+li{
+  margin-left:50px;
+}
+
+span{
+  text-decoration: underline;
+}
+
+/* Nav Adjustments */
+
+#nav{
+  justify-content:left;
+  display:flex;
+  list-style-type: none; 
+}
+
+

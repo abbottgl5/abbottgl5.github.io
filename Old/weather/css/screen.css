@@ -14,7 +14,6 @@
 *
 * ****************************** */
 
-
 /*
 * Todo List
 Make Logo Larger
@@ -38,6 +37,31 @@ hide the bullets for the other data and format the data to match the wireframe
 
 /* General Styles (for all pages and devices) */
 
+.n{
+transform: rotate(0deg);
+}
+.ne{
+  transform: rotate(45deg);
+}
+.e{
+  transform: rotate(90deg);
+}
+.se{
+  transform: rotate(135deg);
+}
+.s{
+  transform: rotate(180deg);
+}
+.sw{
+  transform: rotate(225deg);
+}
+.w{
+  transform: rotate(270deg);
+}
+.nw{
+  transform: rotate(315deg);
+}
+
 html {
     box-sizing: border-box;
    }
@@ -55,51 +79,6 @@ html {
     display: inline-block;
     list-style: none;
 }
-
-#pageNav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  padding-left: 0;
-}
-
-#dial {
-  height: 150px;
-  width: 150px;
-  background: no-repeat center/85% url('/weather/images/wind-pointer.png');
-  z-index: 100;
-  margin: -.6em auto 0;
- }
-
- .n{
-    transform: rotate(0deg);
-  }
-  .ne{
-    transform: rotate(45deg);
-  }
-  .e{
-    transform: rotate(90deg);
-  }
-  .se{
-    transform: rotate(135deg);
-  }
-  .s{
-    transform: rotate(180deg);
-  }
-  .sw{
-    transform: rotate(225deg);
-  }
-  .w{
-    transform: rotate(270deg);
-  }
-  .nw{
-    transform: rotate(315deg);
-  }
-
-  #curWeather {
-    background-image: url("../weather/image/weather-page/clear.jpg");
-  }
 
 /*  3.  Mobile First (styles specific to small screens) */
 
@@ -153,6 +132,14 @@ padding: 0%;
 #Wind_Image{
     width: 100%;
 }
+
+#dial {
+  height: 150px;
+  width: 150px;
+  /* background: no-repeat center/85% url('/weather/images/wind-pointer.png'); */
+  z-index: 100;
+  margin: -.6em auto 0;
+ }
 
 #ul_Hourly{
     list-style:none;

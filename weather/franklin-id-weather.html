@@ -3,6 +3,159 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Weather Page" content="Weather information look up page">
+    <meta name="author" content="Gary Abbott">
+	<title>Franklin, ID | Weather Lookup</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/screen.css" media = "screen">
+
+</head>
+<body>
+
+	<nav>
+		<a href="https://abbottgl5.github.io">Home Page</a>
+	</nav>
+
+	<header id="Header_Weather" class="Weather_Section">
+		<img id="Header_Weather_Logo" src="images/weather-page/logo.jpg" alt="Weather site logo">
+        <h1 id=Heading1_Weather >The Weather Site</h1>
+        <nav>
+            <ul id="pageNav" class="ul_Horizontal">
+                    <li><a href="#" title="Go to theWeather Site homepage">Current</a></li>
+                    <li><a href="#" title="SearchWeather Site homepage">Search</a></li>
+                    <li><a href="#" title="Go to theFranklin-Idaho WeatherSite homepage">Franklin</a></li>
+                    <li><a href="#" title="Go to theGreenville-Idaho WeatherSitehome page">Greenville</a></li>
+            </ul>
+        </nav>        
+	</header>
+	
+	<main>
+		<h2 id="Heading2_Location">Franklin Idaho</h2>
+
+		<ul class="ul_Horizontal">
+			<li id="li_Location_Label_Zip" class="li_Location"><strong>Zip: </strong></li>
+			<li id="li_Location_Zip" class="li_Location">83237</li>
+			<li id="li_Location_Label_Elivation" class="li_Location">| <strong>Elivation: </strong></li>
+			<li id="li_Location_Elivation" class="li_Location"> 1514.246</li>
+			<li id="li_Location_Label_Location" class="li_Location">| <strong>Location: </strong></li>
+			<li id="li_Location_Location" class="li_Location"> 111.79, 111.79</li>
+		</ul>
+
+		<div id="curWeather">
+
+			<section id="Section_Temp" class="Weather_Section">
+				<h2 id="Heading2_Temp" class="Section_Heading_Text">Temperature</h2>
+
+				<p id="Temp_Temp_Now" class="Temp_Paragraph">40 F</p>
+
+				<ul id="ul_Temp" class="ul_Horizontal">
+					<li id="li_Temp_Label_High">High: </li>
+					<li id="li_Temp_High">64 F |</li>
+					<li id="li_Temp_Label_Low">Low: </li>
+					<li id="li_Temp_Low">41 F</li>
+				</ul>	
+
+				<p id="feelTemp" class="Temp_Paragraph"></p>
+
+			</section>
+
+			<section id="Section_Wind" class="Weather_Section">
+				<h2 id="Heading2_Wind" class="Section_Heading_Text">Wind</h2>
+				<div id="dial" class="N">
+					<img src="images/wind-pointer.png" alt="Wind pointer">
+				</div>
+
+				<ul id="ul_Wind" class="ul_Horizontal">
+					<li id="li_Wind_Label_Direction"><strong>Direction: </strong></li>
+					<li id="li_Wind_Direction">SW</li>
+					<li id="li_Wind_Type"><strong>Gusts: </strong></li>
+					<li id="li_Wind_Speed">10-12</li>
+				</ul>
+
+			</section>
+
+			<section id="Section_Current" class="Weather_Section">
+
+				<h2 id="Heading2_Current" class="Section_Heading_Text">Current Conditions</h2>
+
+				<h3 id="Heading3_Current_Weather">Rain</h3>
+
+
+				<img id="Current_Weather_Condition" src="/weather/images/weather-page/rain.jpg" alt="Weather Picture">
+
+			</section>
+		</div>
+
+		<section id="Section_Hourly" class="Weather_Section">
+			<h2 id="Heading2_Hourly" class="Section_Heading_Text">Hourly Information</h2>
+
+			<ul id="ul_Hourly" class="ul_Horizontal" >
+				<li id="li_Hourly_1">5am:</li>
+				<li id="li_Hourly_1_Temp"> 41</li>
+				<li id="li_Hourly_2">6am:</li>
+				<li id="li_Hourly_2_Temp"> 41</li>
+				<li id="li_Hourly_3">7am:</li>
+				<li id="li_Hourly_3_Temp"> 41</li>
+				<li id="li_Hourly_4">8am:</li>
+				<li id="li_Hourly_4_Temp"> 41</li>
+				<li id="li_Hourly_5">9am:</li>
+				<li id="li_Hourly_5_Temp"> 41</li>
+				<li id="li_Hourly_6">10am:</li>
+				<li id="li_Hourly_6_Temp"> 41</li>
+				<li id="li_Hourly_7">11am:</li>
+				<li id="li_Hourly_7_Temp"> 42</li>
+				<li id="li_Hourly_8">12pm:</li>
+				<li id="li_Hourly_8_Temp"> 44</li>
+				<li id="li_Hourly_9">1pm:</li>
+				<li id="li_Hourly_9_Temp"> 44</li>
+				<li id="li_Hourly_10">2pm:</li>
+				<li id="li_Hourly_10_Temp"> 46</li>
+				<li id="li_Hourly_11">3pm:</li>
+				<li id="li_Hourly_11_Temp"> 49</li>
+				<li id="li_Hourly_12">4pm:</li>
+				<li id="li_Hourly_12_Temp"> 51</li>
+				<li id="li_Hourly_13">5pm:</li>
+				<li id="li_Hourly_13_Temp"> 55</li>
+			</ul>
+		</section>
+
+	</main>
+    
+	<footer >
+
+		<p id="demo"></p>
+		<script>
+		var d = new Date();
+		var name = "Gary Abbott, ";
+		var code = "Copyright \u00a9, ";
+		var line = code.concat(name.concat(d));
+		document.getElementById("demo").innerHTML = line;
+		</script>
+
+		<section id="Section_Small_Nav" class="Weather_Section">
+
+			<ul id="ul_Footer_Nav" class="ul_Horizontal">
+				<li id="li_Footer_Nav_Current">Current |</li>
+				<li id="li_Footer_Nav_Search">Search |</li>
+				<li id="li_Footer_Nav_Franklin">Franklin |</li>
+				<li id="li_Footer_Nav_Greenville">Greenville</li>
+			</ul>
+
+		</section>
+
+	</footer>
+
+	<script src="/weather/js/functions.js"></script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
     <title>Franklin, ID | Weather Lookup</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +167,23 @@
 
 </head>
 <body>
+
 <nav>
-<a href="https://abbottgl5.github.io">Home Page</a>
+    <a href="https://abbottgl5.github.io">Home Page</a>
 </nav>
 
-
 <header id="Header_Weather" class="Weather_Section">
-    <img id="Header_Weather_Logo" src="/weather/images/logo.jpeg" alt="Weather site logo">
-    <h1 id=Heading1_Weather>The Weather Site</h1>
+    <img id="Header_Weather_Logo" src="images/weather-page/logo.jpg" alt="Weather site logo">
+    
+    <h1 id=Heading1_Weather >The Weather Site</h1>        
+    <ul id="pageNav" class="ul_Horizontal">
+        <li><a href="#" title="Go to theWeather Site homepage">Current</a></li>
+        <li><a href="#" title="SearchWeather Site homepage">Search</a></li>
+        <li><a href="#" title="Go to theFranklin-Idaho WeatherSite homepage">Franklin</a></li>
+        <li><a href="#" title="Go to theGreenville-Idaho WeatherSitehome page">Greenville</a></li>
+    </ul>
 </header>
+
 
 <main>
     <h2 id="Heading2_Location">Franklin Idaho</h2>
@@ -35,108 +196,92 @@
         <li id="li_Location_Location" class="li_Location"> 111.79, 111.79</li>
     </ul>
 
+<div id="curWeather">
 
-<section id="Section_Temp" class="Weather_Section">
+    <section id="Section_Temp" class="Weather_Section">
 
-    <h2 id="Heading2_Temp" class="Section_Heading_Text">
-    Tempriture
-</h2>
-
-<p id="Temp_Temp_Now" class="Temp_Paragraph">40 F</p>
-
-<ul id="ul_Temp" class="ul_Horizontal">
-    <li id="li_Temp_Label_High">High: </li>
-    <li id="li_Temp_High">64 F |</li>
-    <li id="li_Temp_Label_Low">Low: </li>
-    <li id="li_Temp_Low">41 F</li>
-</ul>
-
-<p id="Temp_Temp_Feels" class="Temp_Paragraph">Feels Like 35 F</p>
-
-</section>
-
-<section id="Section_Wind" class="Weather_Section">
-
-    <h2 id="Heading2_Wind" class="Section_Heading_Text">
-    Wind
+        <h2 id="Heading2_Temp" class="Section_Heading_Text">
+        Tempriture
     </h2>
 
-    <div>
-    <img src="/weather/images/weather-page/wind-pointer.png" alt="Wind pointer">
-</div>
+    <p id="Temp_Temp_Now" class="Temp_Paragraph">40 F</p>
 
-<ul id="ul_Wind" class="ul_Horizontal">
-        <li id="li_Wind_Label_Direction"><strong>Direction: </strong></li>
-        <li id="li_Wind_Direction">SW</li>
-        <li id="li_Wind_Type"><strong>Gusts: </strong></li>
-        <li id="li_Wind_Speed">10-12</li>
+    <ul id="ul_Temp" class="ul_Horizontal">
+        <li id="li_Temp_Label_High">High: </li>
+        <li id="li_Temp_High">64 F |</li>
+        <li id="li_Temp_Label_Low">Low: </li>
+        <li id="li_Temp_Low">41 F</li>
     </ul>
 
-</section>
+    <p id="feelTemp" class="Temp_Paragraph"></p>
 
-<section id="Section_Current" class="Weather_Section">
+    </section>
 
-    <h2 id="Heading2_Current" class="Section_Heading_Text">Current Conditions</h2>
+    <section id="Section_Wind" class="Weather_Section">
 
-    <h3 id="Heading3_Current_Weather">Rain</h3>
+        <h2 id="Heading2_Wind" class="Section_Heading_Text">
+            Wind
+        </h2>
+
+        <div id="dial" class="N">
+            <img src="images/wind-pointer.png" alt="Wind pointer">
+        </div>
+
+        <ul id="ul_Wind" class="ul_Horizontal">
+            <li id="li_Wind_Label_Direction"><strong>Direction: </strong></li>
+            <li id="li_Wind_Direction">SW</li>
+            <li id="li_Wind_Type"><strong>Gusts: </strong></li>
+            <li id="li_Wind_Speed">10-12</li>
+        </ul>
+
+    </section>
+
+    <section id="Section_Current" class="Weather_Section">
+
+        <h2 id="Heading2_Current" class="Section_Heading_Text">Current Conditions</h2>
+
+        <h3 id="Heading3_Current_Weather">Rain</h3>
 
 
-    <img src="/weather/images/weather-page/rain.jpg" id="Wind_Image" alt="Wind Rain">
+        <img id="Current_Weather_Condition" src="/weather/images/weather-page/rain.jpg" alt="Weather Picture">
 
-</section>
-
-<section id="Section_Hourly" class="Weather_Section">
-    <h2 id="Heading2_Hourly" class="Section_Heading_Text">Hourly Information</h2>
-
-    <ul id="ul_Hourly" class="ul_Horizontal" >
-        <li id="li_Hourly_1">5am:</li>
-        <li id="li_Hourly_1_Temp"> 41</li>
-        <li id="li_Hourly_2">6am:</li>
-        <li id="li_Hourly_2_Temp"> 41</li>
-        <li id="li_Hourly_3">7am:</li>
-        <li id="li_Hourly_3_Temp"> 41</li>
-        <li id="li_Hourly_4">8am:</li>
-        <li id="li_Hourly_4_Temp"> 41</li>
-        <li id="li_Hourly_5">9am:</li>
-        <li id="li_Hourly_5_Temp"> 41</li>
-        <li id="li_Hourly_6">10am:</li>
-        <li id="li_Hourly_6_Temp"> 41</li>
-        <li id="li_Hourly_7">11am:</li>
-        <li id="li_Hourly_7_Temp"> 42</li>
-        <li id="li_Hourly_8">12pm:</li>
-        <li id="li_Hourly_8_Temp"> 44</li>
-        <li id="li_Hourly_9">1pm:</li>
-        <li id="li_Hourly_9_Temp"> 44</li>
-        <li id="li_Hourly_10">2pm:</li>
-        <li id="li_Hourly_10_Temp"> 46</li>
-        <li id="li_Hourly_11">3pm:</li>
-        <li id="li_Hourly_11_Temp"> 49</li>
-        <li id="li_Hourly_12">4pm:</li>
-        <li id="li_Hourly_12_Temp"> 51</li>
-        <li id="li_Hourly_13">5pm:</li>
-        <li id="li_Hourly_13_Temp"> 55</li>
-    </ul>
-</section>
-
-<!-- <section class="Weather_Section">
-    <div id="pictureResponsive">
-        <picture>
-                <source media= "(min-width: 950px)" srcset="/weather/images/weather-page/clouds.jpg">
-                <source media="(min-width: 650px)" srcset="/weather/images/weather-page/snow.jpg">
-                <source media="(min-width: 465px)" srcset="/weather/images/weather-page/fog.jpg">
-                <img src="/weather/images/cool-joe.jpg" alt="Snoopy" style="width:auto;">
-        </picture>
-        
-        <img src="/weather/images/test/fog.jpg"
-            sizes="(max-width: 30em) 1020w, 
-            (max-width: 50em) 650w, 
-            calc(33vw - 100px)"
-            srcset="/weather/images/test/clouds.jpg 1024w, 
-            /weather/images/test/snow.jpg 640w, 
-            /weather/images/test/fog.jpg 320w"
-            alt="A rad wolf" />
+    </section>
 </div>
-</section> -->
+
+    <section id="Section_Hourly" class="Weather_Section">
+        <h2 id="Heading2_Hourly" class="Section_Heading_Text">Hourly Information</h2>
+
+        <ul id="ul_Hourly" class="ul_Horizontal" >
+            <li id="li_Hourly_1">5am:</li>
+            <li id="li_Hourly_1_Temp"> 41</li>
+            <li id="li_Hourly_2">6am:</li>
+            <li id="li_Hourly_2_Temp"> 41</li>
+            <li id="li_Hourly_3">7am:</li>
+            <li id="li_Hourly_3_Temp"> 41</li>
+            <li id="li_Hourly_4">8am:</li>
+            <li id="li_Hourly_4_Temp"> 41</li>
+            <li id="li_Hourly_5">9am:</li>
+            <li id="li_Hourly_5_Temp"> 41</li>
+            <li id="li_Hourly_6">10am:</li>
+            <li id="li_Hourly_6_Temp"> 41</li>
+            <li id="li_Hourly_7">11am:</li>
+            <li id="li_Hourly_7_Temp"> 42</li>
+            <li id="li_Hourly_8">12pm:</li>
+            <li id="li_Hourly_8_Temp"> 44</li>
+            <li id="li_Hourly_9">1pm:</li>
+            <li id="li_Hourly_9_Temp"> 44</li>
+            <li id="li_Hourly_10">2pm:</li>
+            <li id="li_Hourly_10_Temp"> 46</li>
+            <li id="li_Hourly_11">3pm:</li>
+            <li id="li_Hourly_11_Temp"> 49</li>
+            <li id="li_Hourly_12">4pm:</li>
+            <li id="li_Hourly_12_Temp"> 51</li>
+            <li id="li_Hourly_13">5pm:</li>
+            <li id="li_Hourly_13_Temp"> 55</li>
+        </ul>
+    </section>
+
+
 
 </main>
     
@@ -164,5 +309,7 @@
 
 </footer>
 
+<script src="/weather/js/functions.js"></script>
+
 </body>
-</html>
+</html> -->
